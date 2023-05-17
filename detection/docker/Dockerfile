@@ -40,7 +40,9 @@ COPY FocalNet/detection/ /Focalnet/detection
 RUN conda clean --all \
     && git clone https://github.com/open-mmlab/mmdetection.git -b 2.x /openmmlab/mmdetection \
     && cd /openmmlab/mmdetection \
-    && cp -r /Focalnet/detection/* /openmmlab/ \
+    && cp -r /Focalnet/detection/mmcv /openmmlab/mmcv/ \
+    && cp -r /Focalnet/detection/mmdet/* /openmmlab/mmdetection/mmdet/ \
+    && cp -r /Focalnet/detection/configs/* /openmmlab/mmdetection/configs/ \
     && pip install --no-cache-dir -e .
 
 RUN chmod -R 777 /openmmlab && \
