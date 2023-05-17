@@ -10,7 +10,7 @@ from .resnet import ResNet, ResNetV1d
 from .resnext import ResNeXt
 from .ssd_vgg import SSDVGG
 from .trident_resnet import TridentResNet
-from .swin_transformer import SwinTransformer
+from .swin import SwinTransformer
 from .focalnet import FocalNet
 
 __all__ = [

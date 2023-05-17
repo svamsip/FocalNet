@@ -2,7 +2,13 @@
 
 ## Installation and Data Preparation
 
-We use [mmdetection](https://github.com/open-mmlab/mmdetection) and follow [Swin-Transformer-Object-Detection](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection) to set up our pipelines. 
+We use [mmdetection](https://github.com/open-mmlab/mmdetection) and follow [Swin-Transformer-Object-Detection](https://github.com/SwinTransformer/Swin-Transformer-Object-Detection) to set up our pipelines.
+
+Refer [INSTALL.md](INSTALL.md) for steps to setup environment.
+
+## Train/Eval
+
+- Change directory to `Openmmlab/mmdetection` for executing the following commands. (ref [INSTALL.md](INSTALL.md) for setting up `Openmmlab/mmdetection`)
 
 ## Evaluation
 

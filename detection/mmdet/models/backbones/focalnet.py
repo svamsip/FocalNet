@@ -336,6 +336,7 @@ class FocalNet(nn.Module):
         focal_windows (Sequence[int]): Focal window sizes at first focal level at four stages
         use_conv_embed (bool): Whether use overlapped convolution for patch embedding
         use_checkpoint (bool): Whether to use checkpointing to save memory. Default: False.
+        pretrained (str, optional): model pretrained path. Default: None
     """
 
     def __init__(self,
@@ -356,6 +357,7 @@ class FocalNet(nn.Module):
                  use_conv_embed=False, 
                  use_checkpoint=False, 
                  use_layerscale=False, 
+                 pretrained=None
         ):
         super().__init__()
 
